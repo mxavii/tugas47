@@ -1,0 +1,20 @@
+<h3 align="center" style="color:#065557">Daftar Kendaraan Roda Empat<h3>
+
+<table border="1" align="center" width="23%">
+    <tr>
+        <th>Nopol</th>
+        <th>Merk </th>
+        <th>Warna</th>
+    </tr>
+
+    {% for mobil in mobils %}
+
+    <tr>
+        <td>{{ mobil.nopol}}</td>
+        <td>{{ mobil.merk}} </td>
+        <td>{{ mobil.warna}}</td>
+    </tr>
+
+    {% endfor %}
+
+</table>

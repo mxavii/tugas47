@@ -1,0 +1,20 @@
+<h3 align="center" style="color:#065557">Daftar Kendaraan Roda Dua<h3>
+
+<table border="1" align="center" width="23%">
+    <tr>
+        <th>Nopol</th>
+        <th>Merk </th>
+        <th>Warna</th>
+    </tr>
+
+    {% for motor in motors %}
+
+    <tr>
+        <td>{{ motor.nopol}}</td>
+        <td>{{ motor.merk}} </td>
+        <td>{{ motor.warna}}</td>
+    </tr>
+
+    {% endfor %}
+
+</table>

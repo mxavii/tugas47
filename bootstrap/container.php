@@ -14,6 +14,18 @@ $container['view'] = function($container) {
     return $view;
 };
 
+$container['validator'] = function ($container) {
+    return new \App\Validation\Validator;
+};
+
+$container['ValidityController'] = function ($container) {
+    return new \App\Controllers\ValidityController($container);
+};
+
+$app->add(new \App\Middleware\ErrorsValidity($container));
+
+// require __DIR__ . '/../routes/route.php';
+
 $caps = new \Illuminate\Database\Capsule\Manager;
 $caps->addConnection($container['settings']['db']);
 $caps->setAsGlobal();

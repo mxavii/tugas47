@@ -26,6 +26,10 @@ class ComposerStaticInit54eae4247d4373991299e5848ff8f9df
             'Slim\\Views\\' => 11,
             'Slim\\' => 5,
         ),
+        'R' => 
+        array (
+            'Respect\\Validation\\' => 19,
+        ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
@@ -44,6 +48,7 @@ class ComposerStaticInit54eae4247d4373991299e5848ff8f9df
         'F' => 
         array (
             'FastRoute\\' => 10,
+            'Faker\\' => 6,
         ),
         'C' => 
         array (
@@ -92,6 +97,10 @@ class ComposerStaticInit54eae4247d4373991299e5848ff8f9df
         array (
             0 => __DIR__ . '/..' . '/slim/slim/Slim',
         ),
+        'Respect\\Validation\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/respect/validation/library',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
@@ -131,6 +140,10 @@ class ComposerStaticInit54eae4247d4373991299e5848ff8f9df
         'FastRoute\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
+        ),
+        'Faker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
         ),
         'Carbon\\' => 
         array (

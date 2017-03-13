@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tambah Data</title>
+
+    <link rel="stylesheet" href="{{ base_url() }}/css/style.css">
+
+</head>
+
+<body>
+    <center>
+        <div align="left" class="form-style-3">
+            <form action="{{ path_for('valid.add') }}"  method="POST">
+                <fieldset><legend>Input Data Kendaraan</legend>
+                    <label for="field4"><span>Jenis Kendaraan </span><select name="jenis" class="select-field">
+                        <option value="motor">Motor</option>
+                        <option value="mobil">Mobil</option>
+                    </select></label>
+                    <label for="field4"><span>Merk Kendaraan </span><select name="merk" class="select-field">
+                        <option value="Honda">Honda</option>
+                        <option value="Daihatsu">Daihatsu</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Suzuki">Suzuki</option>
+                        <option value="Marcedes">Marcedes</option>
+                        <option value="Yamaha">Yamaha</option>
+                        <option value="Kawasaki">Kawasaki</option>
+                        <option value="Ducati">Ducati</option>
+                        <option value="Harley">Harley Davidson</option>
+                        <option value="KTM">KTM</option>
+                        <option value="Kymco">Kymco</option>
+                        <option value="Bajaj">Bajaj</option>
+                    </select></label>
+
+                    {% if errors.nopol %}
+                    <p>{{ errors.nopol | first }}</p>
+                    {% endif %}
+
+                    <label for="field1"><span>Plat Nomor <span class="required">*</span></span><input type="text" class="input-field" name="nopol" style="text-transform:uppercase" /></label>
+
+                    {% if errors.warna %}
+                    <p>{{ errors.warna | first }}</p>
+                    {% endif %}
+
+                    <label for="field2"><span>Warna <span class="required">*</span></span><input type="text" class="input-field" name="warna" value="" /></label>
+
+                    {% if errors.kubikasi %}
+                    <p>{{ errors.kubikasi | first }}</p>
+                    {% endif %}
+
+                    <label for="field2"><span>Kubikasi <span class="required">*</span></span><input type="number" class="input-field" name="kubikasi" value="" /></label>
+
+                    {% if errors.tahun_perakitan %}
+                    <p>{{ errors.tahun_perakitan | first }}</p>
+                    {% endif %}
+
+                    <label for="field2"><span>Tahun Perakitan <span class="required">*</span></span><input type="number" class="input-field" name="tahun_perakitan" value="" min="1" max="9999"/></label>
+                    <label><span>&nbsp;</span><input type="submit" value="Submit" /></label>
+                </fieldset>
+            </form>
+        </div>
+    </center>
+</body>
+</html>

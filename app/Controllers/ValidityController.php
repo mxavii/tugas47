@@ -6,8 +6,6 @@ Use App\Models\Motor;
 Use App\Models\Mobil;
 use Respect\Validation\Validator as Valid;
 use Interop\Container\ContainerInterface;
-// use App\Controllers\AbstractController;
-// use Slim\Views\Twig as View;
 
 
 class ValidityController extends AbstractController
